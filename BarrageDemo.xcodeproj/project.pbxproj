@@ -15,6 +15,9 @@
 		F0BA72A61CC0CC250041A092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BA72A41CC0CC250041A092 /* LaunchScreen.storyboard */; };
 		F0BA72B11CC0CC250041A092 /* BarrageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BA72B01CC0CC250041A092 /* BarrageDemoTests.m */; };
 		F0BA72BC1CC0CC250041A092 /* BarrageDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BA72BB1CC0CC250041A092 /* BarrageDemoUITests.m */; };
+		F0BA72CC1CC0CCA80041A092 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BA72CB1CC0CCA80041A092 /* UIView+Sizes.m */; };
+		F0BA72D21CC0CD8A0041A092 /* BarrageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BA72D11CC0CD8A0041A092 /* BarrageItemView.m */; };
+		F0BA72D51CC0CDB10041A092 /* BarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BA72D41CC0CDB10041A092 /* BarrageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		F0BA72B71CC0CC250041A092 /* BarrageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarrageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BA72BB1CC0CC250041A092 /* BarrageDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarrageDemoUITests.m; sourceTree = "<group>"; };
 		F0BA72BD1CC0CC250041A092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0BA72CA1CC0CCA80041A092 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
+		F0BA72CB1CC0CCA80041A092 /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
+		F0BA72D01CC0CD8A0041A092 /* BarrageItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageItemView.h; sourceTree = "<group>"; };
+		F0BA72D11CC0CD8A0041A092 /* BarrageItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageItemView.m; sourceTree = "<group>"; };
+		F0BA72D31CC0CDB10041A092 /* BarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageView.h; sourceTree = "<group>"; };
+		F0BA72D41CC0CDB10041A092 /* BarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		F0BA728A1CC0CC250041A092 = {
 			isa = PBXGroup;
 			children = (
+				F0BA72C91CC0CC420041A092 /* Barragesdk */,
 				F0BA72951CC0CC250041A092 /* BarrageDemo */,
 				F0BA72AF1CC0CC250041A092 /* BarrageDemoTests */,
 				F0BA72BA1CC0CC250041A092 /* BarrageDemoUITests */,
@@ -138,6 +148,19 @@
 				F0BA72BD1CC0CC250041A092 /* Info.plist */,
 			);
 			path = BarrageDemoUITests;
+			sourceTree = "<group>";
+		};
+		F0BA72C91CC0CC420041A092 /* Barragesdk */ = {
+			isa = PBXGroup;
+			children = (
+				F0BA72CA1CC0CCA80041A092 /* UIView+Sizes.h */,
+				F0BA72CB1CC0CCA80041A092 /* UIView+Sizes.m */,
+				F0BA72D01CC0CD8A0041A092 /* BarrageItemView.h */,
+				F0BA72D11CC0CD8A0041A092 /* BarrageItemView.m */,
+				F0BA72D31CC0CDB10041A092 /* BarrageView.h */,
+				F0BA72D41CC0CDB10041A092 /* BarrageView.m */,
+			);
+			name = Barragesdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BA72D21CC0CD8A0041A092 /* BarrageItemView.m in Sources */,
 				F0BA729E1CC0CC250041A092 /* ViewController.m in Sources */,
 				F0BA729B1CC0CC250041A092 /* AppDelegate.m in Sources */,
+				F0BA72D51CC0CDB10041A092 /* BarrageView.m in Sources */,
 				F0BA72981CC0CC250041A092 /* main.m in Sources */,
+				F0BA72CC1CC0CCA80041A092 /* UIView+Sizes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
